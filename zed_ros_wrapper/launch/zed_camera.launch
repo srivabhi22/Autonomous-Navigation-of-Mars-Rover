@@ -1,0 +1,7 @@
+<launch>
+    <!-- Launch the ZED camera node -->
+    <node name="zed_camera_node" pkg="zed_wrapper" type="zed_wrapper_node" output="screen">
+        <!-- Load camera parameters -->
+        <rosparam file="$(find your_package_name)/config/camera_params.yaml" command="load"/>
+    </node>
+</launch>

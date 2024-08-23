@@ -1,0 +1,13 @@
+<launch>
+    <!-- Launch the ZED camera node -->
+    <include file="$(find your_package_name)/launch/zed_camera.launch"/>
+
+    <!-- Launch the point cloud processor node -->
+    <node name="point_cloud_processor_node" pkg="your_package_name" type="point_cloud_processor.py" output="screen"/>
+
+    <!-- Launch the object detection node -->
+    <node name="object_detection_node" pkg="your_package_name" type="object_detection.py" output="screen">
+        <!-- Load detection parameters -->
+        <rosparam file="$(find your_package_name)/config/detection_params.yaml" command="load"/>
+    </node>
+</launch>

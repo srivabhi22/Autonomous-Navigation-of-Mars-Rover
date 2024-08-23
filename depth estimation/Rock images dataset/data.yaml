@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['rock']
+
+roboflow:
+  workspace: first-2u8hl
+  project: mars-rocks
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/first-2u8hl/mars-rocks/dataset/2

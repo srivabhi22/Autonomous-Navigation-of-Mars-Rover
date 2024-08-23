@@ -1,0 +1,7 @@
+zed_camera:
+  resolution: 2 # 2 for HD720, 3 for HD1080
+  fps: 30
+  depth_mode: 2 # 2 for ULTRA depth mode
+  coordinate_units: 0 # 0 for meters
+  coordinate_system: 0 # 0 for right-handed Y-up
+  sensing_mode: 0 # 0 for STANDARD sensing mode

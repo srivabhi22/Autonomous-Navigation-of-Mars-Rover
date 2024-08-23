@@ -1,0 +1,5 @@
+detection_params:
+  min_distance: 0.5 # Minimum distance in meters for object detection
+  max_distance: 10.0 # Maximum distance in meters for object detection
+  confidence_threshold: 0.5 # Confidence threshold for detections
+  object_class_filter: ["person", "vehicle"] # List of object classes to detect
